@@ -590,6 +590,12 @@ video {
   justify-content: space-between;
 }
 
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .bg-gray-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
@@ -610,6 +616,10 @@ video {
 
 .pl-8 {
   padding-left: 2rem;
+}
+
+.pr-8 {
+  padding-right: 2rem;
 }
 
 .text-center {
